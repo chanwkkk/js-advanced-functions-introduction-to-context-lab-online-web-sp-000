@@ -60,3 +60,7 @@ function allWagesFor(employee){
   let reducer = (accumulator,date)=>accumulator+wagesEarnedOnDate(employee,date)
   return workDates.reduce(reducer,0)
 }
+
+function calculatePayroll(employees){
+  return employees.reduce((accumulator,em)=>accumulator+allWagesFor(em))
+}
