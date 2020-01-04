@@ -64,5 +64,3 @@ function allWagesFor(employee){
 function calculatePayroll(employees){
   return employees.reduce((accumulator,em)=>accumulator+allWagesFor(em),0)
 }
-
-
