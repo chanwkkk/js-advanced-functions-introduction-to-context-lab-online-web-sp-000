@@ -58,5 +58,11 @@ function wagesEarnedOnDate(employee,time){
 function allWagesFor(employee){
   let workDates = employee.timeInEvents.map(time=>time.date+" "+time.hour)
   let reducer = (accumulator,date)=>accumulator+wagesEarnedOnDate(employee,date)
-  return workDates.reduce(reducer)
+  let sum = 0
+  workDates.forEach(function(e){
+    sum+=wagesEarnedOnDate(employee,e)  
+  })
+  return sum
+    
+  
 }
