@@ -60,9 +60,9 @@ function allWagesFor(employee){
   let reducer = (accumulator,date)=>accumulator+wagesEarnedOnDate(employee,date)
   let sum = 0
   workDates.forEach(function(e){
-    sum+=wagesEarnedOnDate(employee,e)  
+    sum+=wagesEarnedOnDate(employee,e)
   })
   return sum
-    
-  
+
+
 }
