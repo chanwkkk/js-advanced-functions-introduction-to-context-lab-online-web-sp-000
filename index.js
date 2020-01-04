@@ -64,3 +64,7 @@ function allWagesFor(employee){
 function calculatePayroll(employees){
   return employees.reduce((accumulator,em)=>accumulator+allWagesFor(em),0)
 }
+
+function findEmployeeByFirstName(records, firstName){
+  return records.find(r=>r.firstName == firstName)
+}
