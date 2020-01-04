@@ -63,6 +63,4 @@ function allWagesFor(employee){
     sum+=wagesEarnedOnDate(employee,e)
   })
   return sum
-
-
 }
